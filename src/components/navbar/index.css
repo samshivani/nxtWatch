@@ -1,0 +1,47 @@
+.dark-mode-icon {
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.light-mode-icon {
+  color: #000000;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.trending-icon {
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+/* 
+*/
+.light-mode-menu-icon {
+  color: #000000;
+  width: 25px;
+  height: 25px;
+}
+
+.dark-mode-menu-icon {
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .dark-mode-menu-icon {
+    display: none;
+  }
+  .light-mode-menu-icon {
+    display: none;
+  }
+}
