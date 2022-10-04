@@ -156,7 +156,7 @@ const Navbar = props => {
                   {close => (
                     <PopUpContainer bgColor={mode}>
                       <PopupHeading bgColor={mode}>
-                        Are you sure you want to logout
+                        Are you sure, you want to logout
                       </PopupHeading>
                       <PopUpButtonContainer bgColor={mode}>
                         <LogoutButton type="button" onClick={() => close()}>

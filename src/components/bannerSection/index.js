@@ -27,7 +27,7 @@ const BannerSection = props => {
             {icon === 'gaming' ? (
               <HeadingElement bgColor={mode}>Gaming</HeadingElement>
             ) : (
-              <HeadingElement bgColor={mode}> Trending</HeadingElement>
+              <HeadingElement bgColor={mode}>Trending</HeadingElement>
             )}
 
             <BannerCloseButton

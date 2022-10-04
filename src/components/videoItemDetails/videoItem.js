@@ -100,11 +100,10 @@ const Video = props => {
               </VideoViewsContainer>
             </VideoDescriptionContainer>
             <HorizontalLine />
-            <ProfileImage src={profileImageUrl} alt="profileImage" />
+            <ProfileImage src={profileImageUrl} alt="channel logo" />
             <VideoBottomSection bgColor={mode}>
               <div>
                 {channelName !== undefined ? <p>{channelName}</p> : null}
-
                 <p>{viewCount} </p>
               </div>
               <p>{description}</p>
