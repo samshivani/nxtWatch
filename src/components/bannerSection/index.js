@@ -1,16 +1,14 @@
-import {MdClose} from 'react-icons/md'
 import {ImFire} from 'react-icons/im'
 import {SiYoutubegaming} from 'react-icons/si'
 import {
   BannerContainer,
   BannerElement,
-  BannerCloseButton,
   HeadingElement,
 } from './styledComponents'
 import WatchContext from '../../context/nxtWatchContext'
 
 const BannerSection = props => {
-  const {icon, hideBanner} = props
+  const {icon} = props
   return (
     <WatchContext.Consumer>
       {value => {
@@ -29,14 +27,6 @@ const BannerSection = props => {
             ) : (
               <HeadingElement bgColor={mode}>Trending</HeadingElement>
             )}
-
-            <BannerCloseButton
-              type="button"
-              onClick={hideBanner}
-              bgColor={mode}
-            >
-              <MdClose className="trending-icon" />
-            </BannerCloseButton>
           </BannerContainer>
         )
       }}

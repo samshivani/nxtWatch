@@ -13,7 +13,8 @@ export const NavbarMainContainer = styled.nav`
 
 export const NavItemsContainer = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
   align-items: center;
   width: 30vw;
@@ -45,6 +46,7 @@ export const LogoutButton = styled.button`
 export const ProfileImage = styled.img`
   width: 25px;
   height: 25px;
+  margin-left: 16px;
 `
 export const PopUpContainer = styled.div`
   background-color: ${props => (props.bgColor ? '#ffffff' : '#000000')};

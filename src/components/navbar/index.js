@@ -74,6 +74,8 @@ const Navbar = props => {
                     />
                   </NavBarIcons>
                 )}
+              </li>
+              <li>
                 <Popup
                   position="left top"
                   trigger={
@@ -140,11 +142,13 @@ const Navbar = props => {
                   )}
                 </Popup>
               </li>
-              <li key="profile">
+              <li key="profileImage">
                 <ProfileImage
                   src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
                   alt="profile"
                 />
+              </li>
+              <li>
                 <Popup
                   modal
                   trigger={
@@ -160,7 +164,7 @@ const Navbar = props => {
                       </PopupHeading>
                       <PopUpButtonContainer bgColor={mode}>
                         <LogoutButton type="button" onClick={() => close()}>
-                          cancel
+                          Cancel
                         </LogoutButton>
                         <LogoutButton type="button" onClick={logoutUser}>
                           Confirm

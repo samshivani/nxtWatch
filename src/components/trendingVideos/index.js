@@ -5,7 +5,7 @@ import WatchContext from '../../context/nxtWatchContext'
 import BannerSection from '../bannerSection'
 import Navbar from '../navbar'
 import Sidebar from '../sidebar'
-import {FailureViewElement} from '../HomePage/styledComponents'
+
 import VideoItem from '../videoItem'
 import {FailureView} from '../FailureView'
 import {FailureViewButton} from '../FailureView/styledComponents'
@@ -15,6 +15,7 @@ import {
   TrendingContentSection,
   TrendingVideosUnorderedListContainer,
   SideContainer,
+  FailureViewElement,
 } from './styledComponents'
 
 const apiConstants = {
@@ -122,6 +123,7 @@ class TrendingVideo extends Component {
                   ) : null}
 
                   {this.getRenderResult()}
+                  <h1>Trending</h1>
                 </TrendingContentSection>
               </TrendingVideosContainer>
             </TrendingVideosPageContainer>

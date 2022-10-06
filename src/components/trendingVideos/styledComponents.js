@@ -32,3 +32,11 @@ export const SideContainer = styled.div`
     display: none;
   }
 `
+export const FailureViewElement = styled.div`
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+`

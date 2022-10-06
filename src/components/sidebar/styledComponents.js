@@ -9,6 +9,9 @@ export const SideBarContainer = styled.div`
   width: 15vw;
   min-height: 120vh;
   background-color: ${props => (props.bgColor ? '#f9f9ff ' : '#424242 ')};
+  @media screen and (max-width: 768px) {
+    width: 50vw;
+  }
 `
 export const AppLinksContainer = styled.ul`
   height: 20vh;

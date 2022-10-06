@@ -22,7 +22,6 @@ import WatchContext from '../../context/nxtWatchContext'
 
 const Video = props => {
   const {details, likeVideo, dislikeVideo, likeActive, dislikeActive} = props
-  console.log(likeActive, dislikeActive)
   const {
     videoUrl,
     title,

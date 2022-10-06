@@ -5,7 +5,6 @@ import WatchContext from '../../context/nxtWatchContext'
 import BannerSection from '../bannerSection'
 import Navbar from '../navbar'
 import Sidebar from '../sidebar'
-import {FailureViewElement} from '../HomePage/styledComponents'
 import VideoItem from '../videoItem'
 import {FailureView} from '../FailureView'
 import {FailureViewButton} from '../FailureView/styledComponents'
@@ -15,6 +14,7 @@ import {
   GamingContentSection,
   GamingVideosUnorderedListContainer,
   SidebarContainer,
+  FailureViewElement,
 } from './styledComponent'
 
 const apiConstants = {
@@ -119,6 +119,7 @@ class GamingVideo extends Component {
                     <BannerSection icon="gaming" hideBanner={this.hideBanner} />
                   ) : null}
                   {this.getRenderResult()}
+                  <h1>Gaming</h1>
                 </GamingContentSection>
               </GamingVideosContainer>
             </GamingVideosPageContainer>

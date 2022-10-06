@@ -92,10 +92,9 @@ class VideoItemDetails extends Component {
       },
     }
     const response = await fetch(url, options)
-    const data = await response.json()
-    console.log(data)
 
     if (response.ok) {
+      const data = await response.json()
       const each = data.video_details
       const updatedData = {
         channelName: each.channel.name,
