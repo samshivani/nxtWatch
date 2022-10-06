@@ -60,7 +60,6 @@ class SavedVideos extends Component {
                   {savedVideosList.length === 0
                     ? this.noVideosView()
                     : this.successView()}
-                  <h1>Saved Videos</h1>
                 </GamingContentSection>
               </GamingVideosContainer>
             </GamingVideosPageContainer>

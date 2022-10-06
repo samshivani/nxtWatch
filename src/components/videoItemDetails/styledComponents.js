@@ -31,3 +31,11 @@ export const ButtonsContainer = styled.div`
   display: flex;
   max-width: 20vw;
 `
+export const FailureViewElement = styled.div`
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+`

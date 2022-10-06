@@ -123,7 +123,6 @@ class TrendingVideo extends Component {
                   ) : null}
 
                   {this.getRenderResult()}
-                  <h1>Trending</h1>
                 </TrendingContentSection>
               </TrendingVideosContainer>
             </TrendingVideosPageContainer>

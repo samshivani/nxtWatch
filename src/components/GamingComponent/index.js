@@ -119,7 +119,6 @@ class GamingVideo extends Component {
                     <BannerSection icon="gaming" hideBanner={this.hideBanner} />
                   ) : null}
                   {this.getRenderResult()}
-                  <h1>Gaming</h1>
                 </GamingContentSection>
               </GamingVideosContainer>
             </GamingVideosPageContainer>

@@ -10,7 +10,12 @@ import {
   SectionContainer,
   HomeSectionContent,
   MainContainer,
+  FailureViewElement,
 } from '../Home/styledComponents'
+import {FailureView} from '../FailureView'
+
+import {FailureViewButton} from '../FailureView/styledComponents'
+
 import WatchContext from '../../context/nxtWatchContext'
 
 const apiConstants = {
@@ -137,6 +142,15 @@ class VideoItemDetails extends Component {
     )
   }
 
+  failureView = () => (
+    <FailureViewElement>
+      <FailureView />
+      <FailureViewButton type="button" onClick={this.getTrendingVideos}>
+        Retry
+      </FailureViewButton>
+    </FailureViewElement>
+  )
+
   renderVideoItem = () => {
     const {apiStatus} = this.state
     switch (apiStatus) {
@@ -144,6 +158,8 @@ class VideoItemDetails extends Component {
         return this.renderSuccessView()
       case apiConstants.progress:
         return this.renderProgressView()
+      case apiConstants.failure:
+        return this.failureView()
       default:
         return null
     }
